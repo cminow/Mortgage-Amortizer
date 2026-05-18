@@ -32,18 +32,23 @@ struct AmortizationView: View {
                 TableColumn("Month") { item in
                     Text(String(item.month))
                 }
+                .width(50)
+                .alignment(.trailing)
 
                 TableColumn("Principal Paid") { item in
                     Text(item.principalPaid, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
+                .alignment(.trailing)
 
                 TableColumn("Interest Paid") { item in
                     Text(item.interestPaid, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
+                .alignment(.trailing)
 
                 TableColumn("Balance") { item in
                     Text(item.remainingBalance, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
+                .alignment(.trailing)
             }
             Spacer()
         }
