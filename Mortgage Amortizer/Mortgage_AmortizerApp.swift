@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Mortgage_AmortizerApp: App {
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup("Mortgage", for: Mortgage.self) { $mortgageId in
+            AmortizationView()
         }
+        
     }
 }
