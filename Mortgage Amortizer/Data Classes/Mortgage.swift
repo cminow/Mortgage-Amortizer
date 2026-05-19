@@ -15,6 +15,16 @@ class Mortgage: Codable {
     var interestRate: Double = 0.065
     var loanTerm: Double = 30
 
+    // This gets around an "Immutable property will not be decoded" error in the generated code
+    //   (by more or less explicitly ignoring the _$observationRegistrar property
+    enum CodingKeys: String, CodingKey {
+        case _id = "id"
+        case _principal = "principal"
+        case _interestRate = "interestRate"
+        case _loanTerm = "loanTerm"
+//        case _observationRegistrar // This is the offending key that must be ignored
+    }
+    
     var amortizationSchedule: [Payment] {
         var schedule: [Payment] = []
         let payment = monthlyPayment
