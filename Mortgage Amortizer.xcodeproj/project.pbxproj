@@ -27,6 +27,7 @@
 		CB39CE132EC3E859004271D1 /* Mortgage Amortizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mortgage Amortizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB39CE212EC3E859004271D1 /* Mortgage AmortizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mortgage AmortizerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB39CE2B2EC3E859004271D1 /* Mortgage AmortizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mortgage AmortizerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5EE5FD2FBE10D30040F65F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -76,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CB39CE152EC3E859004271D1 /* Mortgage Amortizer */,
+				CB5EE5FD2FBE10D30040F65F /* README.md */,
 				CB39CE242EC3E859004271D1 /* Mortgage AmortizerTests */,
 				CB39CE2E2EC3E859004271D1 /* Mortgage AmortizerUITests */,
 				CB39CE142EC3E859004271D1 /* Products */,
